@@ -1,0 +1,15 @@
+<h3>hello angular</h3>
+<h1 appCustomstyle>Custom Heading</h1>
+<h2 appCustomstyle1>CUSTOM HEADING</h2>
+<!--<app-reactiveform></app-reactiveform>-->
+<h4>example of custom pipe</h4>
+<table border= 1px solid black>
+    <tr *ngFor= "let emp of employee">
+        <td>{{emp.code}}</td>
+        <td>{{emp.name | myexample:emp.gender}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.salary}}</td>
+
+    </tr>
+
+</table>
